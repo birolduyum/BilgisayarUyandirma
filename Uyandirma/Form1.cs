@@ -92,66 +92,19 @@ namespace Uyandirma
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            BilgisayarlariYukle();
-            //return; 
-
-            //List<Bilgisayar> items = null; 
-            //using (StreamReader r = new StreamReader("Ayar.json"))
-            //{
-            //    string json = r.ReadToEnd();
-            //    items = JsonConvert.DeserializeObject<List<Bilgisayar>>(json);
-            //}
-
-            //List<Bilgisayar> ýstasyonBilgis = new List<Bilgisayar>();
-            
-           
-
-
-            //// Görünen, Value  
-            //Dictionary<string, string> item = new Dictionary<string, string>();
-            //foreach (Bilgisayar bilgi in items)
-            //{
-            //    item.Add(bilgi.MAC, bilgi.BilgisayarAdi);
-            //}
-
-
-
-            ////item.Add("90:2B:34:33:77:22", "Yazýlým ana");
-            ////item.Add("1C:6F:65:D1:98:3A", "Yazýlým Sanal");
-            ////item.Add("A8:5E:45:6A:79:81", "KAYIT-14");
-            ////item.Add("1C:6F:65:48:C9:43", "KAYIT-07");
-            ////item.Add("1C:6F:65:AF:BA:20", "KAYIT-06");
-            ////item.Add("1C:6F:65:D0:8C:52", "KAYIT-02");
-            ////item.Add("1C:6F:65:D1:98:B1", "KAYIT-09");
-
-            ////int i = 0;
-            ////foreach (var eleman in item)
-            ////{
-            ////    i++;
-            ////    ýstasyonBilgis.Add(new IstasyonBilgi()
-            ////    {
-            ////        ID = i,  
-            ////        IstasyonAdi = eleman.Value,
-            ////        MAC = eleman.Key
-            ////    });
-                
-            ////}
-            ////string json = JsonConvert.SerializeObject(ýstasyonBilgis.ToArray());
-
-            //////write string to file
-            ////System.IO.File.WriteAllText("Ayar.json", json);
-
-            //cmbxPC.DataSource = new BindingSource(item, null);
-            //cmbxPC.DisplayMember = "Value";
-            //cmbxPC.ValueMember = "Key";
+            BilgisayarlariYukle();           
         }
 
         private void btnBilgisayarListesi_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void bilgisayarEkleÇýkartToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             BilgisayarEkleme bilgisayarEkleme = new BilgisayarEkleme();
             bilgisayarEkleme.ShowDialog();
-            BilgisayarlariYukle(); 
-
+            BilgisayarlariYukle();
         }
     }
 }
