@@ -1,6 +1,6 @@
 ﻿namespace Uyandirma
 {
-    partial class Form1
+    partial class AnaForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -79,7 +79,7 @@
             this.bilgisayarEkleÇıkartToolStripMenuItem.Text = "Bilgisayar Ekle/Çıkart";
             this.bilgisayarEkleÇıkartToolStripMenuItem.Click += new System.EventHandler(this.bilgisayarEkleÇıkartToolStripMenuItem_Click);
             // 
-            // Form1
+            // AnaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -88,7 +88,7 @@
             this.Controls.Add(this.btnUyandir);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "AnaForm";
             this.Text = "Bilgisayar Uyandırma Uygulaması";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
